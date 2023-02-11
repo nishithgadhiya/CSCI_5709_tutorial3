@@ -30,7 +30,7 @@ function Registration(props) {
     if (EMAIL_REGEX.test(email)) {
       setError(false);
       setEmailError("");
-      if (password != confirmPassword) {
+      if (password !== confirmPassword) {
         setConfirmPasswordError(PASSWORD_NOT_MATCH);
         setError(true);
       } else {
